@@ -28,5 +28,6 @@ def index(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.valid),
-    path('login', views.login)
+    path('login', views.login),
+    path('signout', views.Sout)
 ]

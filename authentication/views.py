@@ -21,3 +21,9 @@ def setcookie(request):
     
 def login(request):
     return setcookie(request)
+
+def Sout(request):
+    res=render(request, 'index.html')
+    res.delete_cookie('UserName')
+    res.delete_cookie('PASS')
+    return res
